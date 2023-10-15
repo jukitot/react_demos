@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="wrap">
 
-        <h1>mrrrr</h1>
+
 
     </div>
   );
