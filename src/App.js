@@ -1,19 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
-import {useEffect} from "react";
+import {useEffect, useState} from "react";
 import {getAllUsers, getUserById} from "./services/user.api.service";
+import UsersComponent from "./users/UsersComponent";
 function App() {
 
-  useEffect(()=>{
-    getAllUsers().then(value => console.log(value));
-    getAllUsers().then(value => console.log(value.data))
-
-    getUserById(9).then(value => console.log(value))
-    getUserById(9).then(value => console.log(value.data))
-  },[])
+const[user, setUser] = useState(null)
+  const choseUser = (obj)=>{
+    setUser(obj);
+  }
 
   return (
     <div className="App">
+        {/*<h2>{user?.email}</h2>*/}
+        {
+           user && <h2>{user.email}</h2>
+        }
+      <hr/>
+      <h2>users component start</h2>
+      <UsersComponent choseUser={choseUser}/>
+      <h2>users component end</h2>
+      <hr/>
 
     </div>
   );
