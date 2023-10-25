@@ -1,14 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
 import {useForm} from "react-hook-form";
+import {savePost} from "./service/post.api.service";
 
 function App() {
   let {register,
     handleSubmit,
     watch,
     formState:{errors}} = useForm({defaultValues:{title:'title default'}});
-  const onSubmit = (data) =>{
+  const onSubmit = (data) => {
     console.log(data);
+    savePost(data).then(({data}) => console.log(data))
   }
   console.log(watch('title'));
   return (
