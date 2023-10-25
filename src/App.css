@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  padding-top: 20px ;
+
 }
 
 .App-logo {
@@ -35,4 +37,12 @@
   to {
     transform: rotate(360deg);
   }
+}
+input{
+  margin: 10px;
+}
+
+.inputBody{
+  height: 120px;
+  width: 50%;
 }
