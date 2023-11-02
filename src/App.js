@@ -1,12 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 
-function App() {
-  return (
-    <div className="App">
+const App = () => {
+    return (
+        <div>
+            Start
+        </div>
+    );
+};
 
-    </div>
-  );
-}
-
-export default App;
+export {App};
