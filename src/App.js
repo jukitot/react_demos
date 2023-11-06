@@ -1,9 +1,12 @@
 import React from 'react';
 
+import {Users} from "./Components/Users";
+
 const App = () => {
+
     return (
         <div>
-            Start
+            <Users/>
         </div>
     );
 };
