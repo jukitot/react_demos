@@ -1,11 +1,11 @@
 import React from 'react';
 
-const HomePage = () => {
+const ErrorPage = () => {
     return (
         <div>
-            Home page
+            <h1>Error :(</h1>
         </div>
     );
 };
 
-export {HomePage};
+export {ErrorPage};
