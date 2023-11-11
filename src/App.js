@@ -1,10 +1,11 @@
-import {useEffect, useRef, useState} from "react";
-import {PostsContainer} from "./components/PostsContainer/PostsContainer";
+
+import {CarsContainer} from "./components/CarsContainer/CarsContainer";
+
 
 function App() {
     return(
         <div>
-        <PostsContainer/>
+            <CarsContainer/>
         </div>
     )
 }
