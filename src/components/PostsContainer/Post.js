@@ -3,6 +3,7 @@ import {postService} from "../../services/postService";
 
 const Post = ({post}) => {
     const {id, userId, title, body} = post
+    console.log(post);
 
 
     return (

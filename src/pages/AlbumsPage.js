@@ -1,14 +1,15 @@
 import React from 'react';
-import {Users} from "../components/UsersContainer/Users";
-import {Outlet} from "react-router-dom";
 
-const UsersPage = () => {
+import {Outlet} from "react-router-dom";
+import {Albums} from '../components/AlbumsContainer/Albums'
+
+const AlbumsPage = () => {
     return (
         <div>
-            <Users/>
+            <Albums/>
             <Outlet/>
         </div>
     );
 };
 
-export {UsersPage};
+export {AlbumsPage};

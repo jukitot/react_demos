@@ -8,7 +8,8 @@ const Header = () => {
     return (
         <div>
             <div className={css.Header}>
-                <NavLink to="/users">Users</NavLink>
+                <NavLink to="/todos">Todos</NavLink>
+                <NavLink to="/albums">Albums</NavLink>
                 <NavLink to="/comments">Comments</NavLink>
             </div>
 
