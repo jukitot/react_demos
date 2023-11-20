@@ -5,7 +5,7 @@ const ContextProvider = ({children}) => {
    const state =  useState({isAuth: false, me: null});
     return (
        <ContextProvider value={state}>
-           {children}
+           {children} lk
        </ContextProvider>
     );
 };
