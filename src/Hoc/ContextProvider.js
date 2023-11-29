@@ -4,9 +4,9 @@ const Context = createContext(null)
 const ContextProvider = ({children}) => {
    const state =  useState({isAuth: false, me: null});
     return (
-       <ContextProvider value={state}>
-           {children} lk
-       </ContextProvider>
+       <Context.Provider value={state}>
+           {children}
+       </Context.Provider>
     );
 };
 

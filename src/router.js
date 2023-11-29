@@ -4,17 +4,23 @@ import {CarsPage, LoginPage, RegisterPage} from "./Pages";
 
 
 const router = createBrowserRouter([
-    {path:'', element:<MainLayout/>, children:[
-            {index:true, element:<Navigate to={'cars'}/>},
-            {element:<PublicLayout/>, children:[
-                    {path:'login', element:<LoginPage/>},
-                    {path:'register', element:<RegisterPage/>}
+    {
+        path: '', element: <MainLayout/>, children: [
+            {index: true, element: <Navigate to={'login'}/>},
+            {
+                element: <PublicLayout/>, children: [
+                    {path: 'login', element: <LoginPage/>},
+                    {path: 'register', element: <RegisterPage/>}
 
-                ]},
-            {element:<AuthLayout/>, children:[
+                ]
+            },
+            {
+                element: <AuthLayout/>, children: [
                     {path: 'cars', element: <CarsPage/>}
-         ]}
-        ]}
+                ]
+            }
+        ]
+    }
 ])
 
 export {router}
